@@ -29,4 +29,4 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 * The Auto Scaling Group detected the failure, terminated the bad server, and launched a brand-new instance to bring the count back to 2.
 * The website remained up and accessible throughout the entire recovery process.
 * **![Before-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-before-Activity.png)**
-* **![After-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
+* **![After-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-after-Activity.png)**
