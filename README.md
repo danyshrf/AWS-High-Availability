@@ -30,4 +30,6 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 * The website remained up and accessible throughout the entire recovery process.
 **![Before-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-before-Activity.png)**
 **![After-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-after-Activity.png)**
-
+  
+3. **ALB working output**
+**![Output](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-after-Activity.png)**
