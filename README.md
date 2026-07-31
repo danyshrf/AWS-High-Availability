@@ -32,4 +32,4 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 **![After-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-after-Activity.png)**
   
 3. **ALB working output**
-**![Output](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-after-Activity.png)**
+**![Output](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/working-output.png)**
