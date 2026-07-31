@@ -16,9 +16,9 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 ## Security & Traffic Flow 
 1. **ALB Security Group(Public):** Open to `0.0.0.0/0` on Port 80 (HTTP) to accept global internet traffic.
 2. **EC2 (Web Server) Security Group(Private):** Hidden in private subnets. Their security group drops all incoming traffic unless it comes directly from the Load Balancer's Security Group ID.
-* **This setup prevents anyone from bypassing the load balancer or accessing the EC2 instances directly from the outside.
+* ** This setup prevents anyone from bypassing the load balancer or accessing the EC2 instances directly from the outside.
 
 ## Testing & Verification
-1. **Target Group Health Checks
+1. ** Target Group Health Checks
 * After launching the instances, the Load Balancer ran health checks and confirmed that both EC2 instances were Healthy across both Availability Zones.
-> * > **![Before](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/photo_draw.io.jpg)**
+> * **![Health-Check](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
