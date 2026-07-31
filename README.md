@@ -4,7 +4,7 @@
 I built a multi-AZ web architecture on AWS to practice real-world cloud networking, traffic management, and fault tolerance. The goal was to build a setup where backend web servers live safely in private subnets, incoming traffic is handled by a Load Balancer, and the infrastructure automatically replaces any server that fails without breaking the application.
 
 ## Architecture Diagram **(created using draw.io)**
- ** ![Diagram](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/photo_draw.io.jpg)**
+ **![Diagram](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/photo_draw.io.jpg)**
 
 ## AWS Services Used
 * **Amazon VPC:** Split into public and private subnets across 2 Availability Zones.
@@ -28,5 +28,5 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 * The Load Balancer flagged the instance as dead and stopped sending traffic to it.
 * The Auto Scaling Group detected the failure, terminated the bad server, and launched a brand-new instance to bring the count back to 2.
 * The website remained up and accessible throughout the entire recovery process.
-* **![Before-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
+* **![Before-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/ASG-before-Activity.png)**
 * **![After-Activity](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
