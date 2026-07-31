@@ -4,7 +4,7 @@
 I built a multi-AZ web architecture on AWS to practice real-world cloud networking, traffic management, and fault tolerance. The goal was to build a setup where backend web servers live safely in private subnets, incoming traffic is handled by a Load Balancer, and the infrastructure automatically replaces any server that fails without breaking the application.
 
 ## Architecture Diagram **(created using draw.io)**
-> **![Diagram](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/photo_draw.io.jpg)**
+ ** ![Diagram](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/photo_draw.io.jpg)**
 
 ## AWS Services Used
 * **Amazon VPC:** Split into public and private subnets across 2 Availability Zones.
@@ -19,6 +19,13 @@ I built a multi-AZ web architecture on AWS to practice real-world cloud networki
 * ** This setup prevents anyone from bypassing the load balancer or accessing the EC2 instances directly from the outside.
 
 ## Testing & Verification
-1. ** Target Group Health Checks
+* ** Target Group Health Checks 
 * After launching the instances, the Load Balancer ran health checks and confirmed that both EC2 instances were Healthy across both Availability Zones.
-> * **![Health-Check](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
+* ** ![Health-Check](https://github.com/danyshrf/AWS-High-Availability/blob/main/Screenshots(proofs)/Target-group-checkup.png)**
+
+* ** Server Failure & Auto-Recovery Test
+* To prove the setup was actually fault-tolerant, I manually terminated one of the EC2 instances in the AWS Console:
+* The Load Balancer flagged the instance as dead and stopped sending traffic to it.
+* The Auto Scaling Group detected the failure, terminated the bad server, and launched a brand-new instance to bring the count back to 2.
+* The website remained up and accessible throughout the entire recovery process.
+* 
